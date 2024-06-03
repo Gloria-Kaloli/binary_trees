@@ -1,11 +1,12 @@
 #include "binary_trees.h"
 int recurse_for_is_bst(const binary_tree_t *tree, int min, int max);
 /**
- * binary_tree_is_bst - check if tree is BST
+ * binary_tree_is_bst - Function to check if tree is BST
  * @tree: tree to check
  *
  * Return: 1 is BST; 0 if not
  */
+
 int binary_tree_is_bst(const binary_tree_t *tree)
 {
 	if (!tree) /* if either pointer is NULL */
@@ -13,14 +14,16 @@ int binary_tree_is_bst(const binary_tree_t *tree)
 
 	return (recurse_for_is_bst(tree, INT_MIN, INT_MAX));
 }
+
 /**
- * recurse_for_is_bst - recursive check for BST
+ * recurse_for_is_bst - Functio to recursive check for BST
  * @tree: pointer to root node
  * @min: current minimum
  * @max: current maximum
  *
  * Return: 1 if BST; 0 if not
  */
+
 int recurse_for_is_bst(const binary_tree_t *tree, int min, int max)
 {
 	if (!tree) /* if either pointer is NULL */
