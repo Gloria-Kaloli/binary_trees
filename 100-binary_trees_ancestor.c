@@ -2,12 +2,13 @@
 binary_tree_t *recurse_for_ancestor(binary_tree_t *root,
 	const binary_tree_t *first, const binary_tree_t *second);
 /**
- * binary_trees_ancestor - find lowest common ancestor
+ * binary_trees_ancestor - Function that find lowest common ancestor
  * @first: first node to find ancestor for
  * @second: second node to find ancestor for
  *
  * Return: pointer to lowest common ancestor; NULL on failure
  */
+
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 	const binary_tree_t *second)
 {
@@ -25,13 +26,14 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 	return (recurse_for_ancestor(root, first, second));
 }
 /**
- * recurse_for_ancestor - recursive component to find LCA
+ * recurse_for_ancestor - Function that recursive component to find LCA
  * @root: pointer to root of tree
  * @first: pointer to one child
  * @second: pointer to other child
  *
  * Return: pointer to LCA
  */
+
 binary_tree_t *recurse_for_ancestor(binary_tree_t *root,
 	const binary_tree_t *first, const binary_tree_t *second)
 {
