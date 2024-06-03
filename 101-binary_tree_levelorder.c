@@ -4,10 +4,11 @@ size_t binary_tree_height(const binary_tree_t *tree);
 void recurse_for_levelorder(const binary_tree_t *tree,
 	void (*func)(int), size_t level);
 /**
- * binary_tree_levelorder - traverse tree by level
+ * binary_tree_levelorder - Program traverse tree by level
  * @tree: tree to traverse
  * @func: function pointer
  */
+
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
 	size_t height, level = 0;
@@ -36,22 +37,26 @@ void recurse_for_levelorder(const binary_tree_t *tree,
 	recurse_for_levelorder(tree->left, func, level - 1);
 	recurse_for_levelorder(tree->right, func, level - 1);
 }
+
 /**
- * binary_tree_height - measure height of tree
+ * binary_tree_height - Function that measures height of tree
  * @tree: tree to measure
  *
  * Return: height
  */
+
 size_t binary_tree_height(const binary_tree_t *tree)
 {
 	return (recurse_for_height(tree) - 1);
 }
+
 /**
- * recurse_for_height - measure height
+ * recurse_for_height - Function that measures height
  * @tree: tree to measure
  *
  * Return: height
  */
+
 size_t recurse_for_height(const binary_tree_t *tree)
 {
 	size_t heightR, heightL;
