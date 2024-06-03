@@ -1,12 +1,13 @@
 #include "binary_trees.h"
 bst_t *recurse_for_bst_insert(bst_t *tree, int value);
 /**
- * bst_insert - insert node into BST
+ * bst_insert - Function to insert node into BST
  * @tree: pointer to root of tree
  * @value: value to stored in inserted node
  *
  * Return: pointer to inserted node; NULL on failure
  */
+
 bst_t *bst_insert(bst_t **tree, int value)
 {
 	bst_t *new_node = NULL, *parent = NULL;
@@ -37,13 +38,15 @@ bst_t *bst_insert(bst_t **tree, int value)
 
 	return (new_node);
 }
+
 /**
- * recurse_for_bst_insert - recursively search tree
+ * recurse_for_bst_insert - Functio to recursively search tree
  * @tree: pointer to root of tree/subtree
  * @value: value being added
  *
  * Return: pointer to parent of new node; NULL on failure
  */
+
 bst_t *recurse_for_bst_insert(bst_t *tree, int value)
 {
 	if (!tree)
