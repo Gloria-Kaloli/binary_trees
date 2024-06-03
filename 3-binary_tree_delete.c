@@ -1,8 +1,10 @@
 #include "binary_trees.h"
+
 /**
- * binary_tree_delete - deletes entire tree
+ * binary_tree_delete - Function that deletes entire tree
  * @tree: pointer to root
  */
+
 void binary_tree_delete(binary_tree_t *tree)
 {
 	if (tree)
