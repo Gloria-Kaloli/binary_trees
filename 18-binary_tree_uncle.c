@@ -1,13 +1,15 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_uncle - finds uncle of a node
+ * binary_tree_uncle - Function that finds uncle of a node
  * @node: pointer to node to find the uncle node
+ *
  * Description: 18. Uncle
- * Return: see below
- * 1. upon success, return pointer to uncle node
- * 2. upon fail, return NULL
+ * Return: as follows
+ * upon success, return pointer to uncle node
+ * upon fail, return NULL
  */
+
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
 	/* base case */
@@ -27,11 +29,12 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 }
 
 /**
- * binary_tree_sibling - determine sibling node
+ * binary_tree_sibling - Function to determine sibling node
  * @node: node to find sibling of
  *
  * Return: pointer to sibling node; NULL on failure
  */
+
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
 	if (node == NULL || node->parent == NULL)
