@@ -1,11 +1,13 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_rotate_right - right rotate binary tree
+ * binary_tree_rotate_right - Program to right rotate binary tree
  * @tree: pointer to the root node
+ *
  * Description: 23. Rotate right
  * Return: pointer to new root node
  */
+
 binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree)
 {
 	/* declare and initialize pointers */
