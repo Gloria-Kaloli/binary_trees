@@ -3,14 +3,16 @@
 bst_t *helper_loop(bst_t *root);
 
 /**
- * bst_remove - removes a node from a BST
+ * bst_remove - Function that removes a node from a BST
  * @root: pointer to the root node
  * @value: value to remove
+ *
  * Description: 28. BST - Remove
- * Return: see below
- * 1. upon success, return pointer to new root node
- * 2. upon fail, return NULL
+ * Return: as follows
+ * upon success, return pointer to new root node
+ * upon fail, return NULL
  */
+
 bst_t *bst_remove(bst_t *root, int value)
 {
 	/* declare and initialize pointer */
@@ -76,11 +78,13 @@ bst_t *bst_remove(bst_t *root, int value)
 }
 
 /**
- * helper_loop - searches for in-order successor
+ * helper_loop - Function that searches for in-order successor
  * @root: pointer to root node
+ *
  * Description: searches in left subtree only
  * Return: pointer to in-order successor
  */
+
 bst_t *helper_loop(bst_t *root)
 {
 	bst_t *current = root;
