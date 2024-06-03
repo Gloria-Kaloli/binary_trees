@@ -3,13 +3,15 @@
 size_t recurse_for_height(const binary_tree_t *tree);
 
 /**
- * binary_tree_balance - measures the balance factor of a binary tree
+ * binary_tree_balance - Function that measures balance factor of a binary tree
  * @tree: pointer to node to measure the balance factor
+ *
  * Description: 14. Balance factor
- * Return: see below
- * 1. upon success, return balance factor
- * 2. upon fail, return 0
+ * Return: as follows
+ * upon success, return balance factor
+ * upon fail, return 0
  */
+
 int binary_tree_balance(const binary_tree_t *tree)
 {
 	/* declare and initialize variables to calculate the heights */
@@ -37,22 +39,24 @@ int binary_tree_balance(const binary_tree_t *tree)
 }
 
 /**
- * binary_tree_height - measure height of tree
+ * binary_tree_height - Function that measure height of tree
  * @tree: tree to measure
  *
  * Return: height
  */
+
 size_t binary_tree_height(const binary_tree_t *tree)
 {
 	return (recurse_for_height(tree) - 1);
 }
 
 /**
- * recurse_for_height - measure height
+ * recurse_for_height - Function that measure height
  * @tree: tree to measure
  *
  * Return: height
  */
+
 size_t recurse_for_height(const binary_tree_t *tree)
 {
 	size_t heightR, heightL;
