@@ -1,13 +1,15 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_leaves - counts leaves of a binary tree
+ * binary_tree_leaves - Function that leaves binary tree
  * @tree: pointer to node to count leaves
+ *
  * Description: 12. Leaves
- * Return: see below
- * 1. upon success, return number of leaves
- * 2. upon fail, return 0
+ * Return: as follows
+ * upon success, return number of leaves
+ * upon fail, return 0
  */
+
 size_t binary_tree_leaves(const binary_tree_t *tree)
 {
 	/* declare and initialize variable for leaves */
