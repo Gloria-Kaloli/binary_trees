@@ -3,12 +3,13 @@ bst_t *recurse_for_bst_insert(bst_t *tree, int value);
 bst_t *bst_insert(bst_t **tree, int value);
 void recurse_for_balance(binary_tree_t *tree);
 /**
- * avl_insert - insert node into AVL
+ * avl_insert - Function to insert node into AVL
  * @tree: pointer to root of tree
  * @value: value for inserted node
  *
  * Return: pointer to created node
  */
+
 avl_t *avl_insert(avl_t **tree, int value)
 {
 	bst_t *new_node = NULL, *parent = NULL;
@@ -44,9 +45,10 @@ avl_t *avl_insert(avl_t **tree, int value)
 	return (new_node);
 }
 /**
- * recurse_for_balance - recurse upstream from new node
+ * recurse_for_balance - function to recurse upstream from new node
  * @tree: pointer to root of tree
  */
+
 void recurse_for_balance(binary_tree_t *tree)
 {
 	int balFactor;
@@ -75,12 +77,13 @@ void recurse_for_balance(binary_tree_t *tree)
 	recurse_for_balance(tree->parent);
 }
 /**
- * recurse_for_bst_insert - recursively search tree
+ * recurse_for_bst_insert - function to recursively search tree
  * @tree: pointer to root of tree/subtree
  * @value: value being added
  *
  * Return: pointer to parent of new node; NULL on failure
  */
+
 bst_t *recurse_for_bst_insert(bst_t *tree, int value)
 {
 	if (!tree)
